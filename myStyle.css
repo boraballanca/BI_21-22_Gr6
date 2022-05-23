@@ -1,0 +1,902 @@
+h1,
+h2,
+h3,
+h5 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/* Start of the header */
+
+header {
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    color: white;
+    border-top: 5px solid #40aed7;
+    height: 7.5em;
+}
+
+header h1 {
+    padding: 0.5em 0 0 1.3em;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+header nav p {
+    margin: 0;
+    padding: 0;
+    margin-left: 2em;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline;
+    font-size: 70%;
+    padding: 5px;
+}
+
+#logo {
+    width: 19em;
+    margin-top: 1.2em;
+    position: relative;
+    float: left;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#logoimg {
+    width: 12.5em;
+    /* margin-top: 1.2em; */
+    margin-top: 0.5em;
+    margin-left: 3em;
+    position: relative;
+    float: left;
+    background-image: url("images/logo_white.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    height: 100px;
+    transition: 0.5s;
+}
+
+#logoimg:hover {
+    background-image: url("images/logo.png");
+}
+
+.navBar {
+    height: 100px;
+    /* margin-top: 2em; */
+    /* padding-top: 2em; */
+    position: relative;
+    float: right;
+    right: 10%;
+    top: 2em;
+}
+
+.navBar a {
+    font-size: medium;
+    padding: 15px;
+}
+
+.navBar a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.navBar a:visited {
+    color: white;
+}
+
+.navBar a:hover {
+    border-radius: 10px;
+    background-color: #40aed7;
+}
+
+
+/* End of header */
+
+
+/* Styling the massive text part */
+
+#massive {
+    font-size: 7.5em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 300;
+    color: #333333;
+    margin: 2%;
+}
+
+
+/* End of massive text */
+
+
+/* The Services section */
+
+.services {
+    width: 100%;
+}
+
+.service {
+    text-align: center;
+    /* width: 22%; */
+    width: 22.5%;
+    margin-left: 2%;
+    /* height: 350px; */
+    border: 1px solid #333333;
+    /* margin-left: 2em; */
+    padding-bottom: 2em;
+    position: relative;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+}
+
+.service h2 {
+    margin-top: 65%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333333;
+    font-size: 350%;
+    font-weight: normal;
+}
+
+.service img {
+    padding: 15% 0% 5% 0%;
+}
+
+#serviceImg1 {
+    background-image: url(images/slim3.svg);
+    background-size: 8em 8em;
+}
+
+#serviceImg2 {
+    background-image: url(images/bodybuilding.svg);
+    background-size: 8em 8em;
+}
+
+#serviceImg3 {
+    background-image: url(images/molla.svg);
+    background-size: 8em 8em;
+}
+
+#serviceImg4 {
+    background-image: url(images/trainer.svg);
+    background-size: 8em 8em;
+}
+
+#serviceImg1:hover {
+    background-image: url(images/slimwhite.svg);
+}
+
+#serviceImg2:hover {
+    background-image: url(images/bodywhite.svg);
+}
+
+#serviceImg3:hover {
+    background-image: url(images/mollawhite.svg);
+}
+
+#serviceImg4:hover {
+    background-image: url(images/trainerwhite.svg);
+}
+
+.service p {
+    color: #9b9b9b;
+    text-align: center;
+    padding: 1em 2em 0 2em;
+}
+
+.service:hover {
+    background-color: #40aed7;
+}
+
+.service:hover p,
+.service:hover h2 {
+    color: #ffffff;
+}
+
+
+/* End of the Services section */
+
+
+/* The Team section */
+
+.team {
+    position: relative;
+    float: left;
+}
+
+.team a {
+    color: rgb(122, 168, 255);
+}
+
+.teamMember {
+    width: 22.5%;
+    margin-left: 2%;
+    /* height: 600px; */
+    position: relative;
+    float: left;
+}
+
+.teamMember img {
+    width: 100%;
+}
+
+.teamMember figcaption {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #383838;
+    padding: 3%;
+    text-align: center;
+}
+
+.teamMember p {
+    color: #979797;
+    font-size: 1.087em;
+}
+
+.teamMember a:link {
+    padding-top: 0.5em;
+    float: right;
+    color: #47b1d8;
+    text-decoration: none;
+}
+
+
+/* End of the Team section */
+
+
+/* Start of the footer */
+
+footer {
+    color: #949494;
+    float: left;
+    width: 100%;
+    background-color: #303030;
+    margin-top: 5%;
+}
+
+footer a:link {
+    color: #40aed7;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #40aed7;
+}
+
+th,
+td {
+    width: 20%;
+    padding-left: 3%;
+}
+
+.rounded {
+    font-size: 90%;
+    padding: 2%;
+    color: white;
+    background-color: #40aed7;
+    border-radius: 0.5em;
+}
+
+footer table {
+    padding-top: 2.5em;
+}
+
+footer th {
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 100;
+    font-size: 21px;
+    text-align: left;
+    padding-bottom: 2.125em;
+}
+
+.postUser {
+    font-size: 13px;
+}
+
+.postTitle {
+    font-size: 17px;
+    margin: 0;
+}
+
+footer input,
+textarea {
+    background-color: #222222;
+    width: 14em;
+    padding: 0.5em;
+    font-size: 17px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 0.5em;
+}
+
+.copyright {
+    margin-top: 3em;
+    background-color: #2b2b2b;
+    height: 50px;
+}
+
+.copyright p {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 3%;
+}
+
+
+/* End of the footer */
+
+@font-face {
+    font-family: "KG Red Hands";
+    src: url("images/KGRedHands.ttf");
+}
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 500px) {
+    .service {
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+    #massive {
+        font-size: 300%;
+        margin-top: 0%;
+    }
+    .teamMember {
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    tr,
+    td {
+        width: 80%;
+        float: left;
+    }
+    th {
+        font-size: 0;
+    }
+}
+
+
+/* End of Responsiveness */
+
+
+/* Blog page */
+
+.topPosts {
+    width: 75%;
+    height: 37.5em;
+    margin-top: 2%;
+    margin-left: 12.5%;
+    display: flex;
+    text-align: center;
+}
+
+.topPosts p,
+.usualPost p {
+    color: rgba(122, 168, 255, 200);
+}
+
+#topLeft {
+    width: 29%;
+    height: 100%;
+}
+
+#topPost1 {
+    width: 100%;
+    height: 45%;
+    /* background-image: url("images/blogimg5.jpg");
+    background-position: center;
+    background-repeat: no-repeat; */
+    background: url("images/blogimg5.jpg") no-repeat center;
+    background-size: cover;
+    margin-top: 0px;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    transition: 0.6s;
+}
+
+#topPost1:hover {
+    opacity: 0.8;
+}
+
+#topPost2 {
+    width: 100%;
+    height: 45%;
+    margin-top: 10%;
+    background-image: url("images/blogimg4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    transition: 0.6s;
+}
+
+#topPost2:hover {
+    opacity: 0.8;
+}
+
+#topPost1 p,
+#topPost2 p {
+    padding-top: 17.2em;
+    font-size: 1rem;
+}
+
+#topPostBig {
+    width: 69.5%;
+    height: 100%;
+    margin-top: 1.1%;
+    margin-left: 1.5%;
+    background-image: url(images/blogimg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    transition: 0.6s;
+}
+
+#topPostBig:hover {
+    opacity: 0.8;
+}
+
+#topPostBig p {
+    padding-top: 37em;
+    font-size: 1rem;
+}
+
+a:-webkit-any-link {
+    text-decoration: none !important;
+}
+
+.usualPost {
+    width: 31.33%;
+    height: 40%;
+    margin-top: 5%;
+    margin-right: 3%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    float: left;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    transition: 0.6s;
+}
+
+#up1 {
+    background-image: url("images/blogimg7.jpg");
+}
+
+#up2 {
+    background-image: url("images/blogimg3.jpg");
+}
+
+#up3 {
+    background-image: url("images/blogimg6.jpg");
+}
+
+#up4 {
+    background-image: url("images/blogimg8.jpg");
+}
+
+#up5 {
+    background-image: url("images/blogimg1.jpg");
+}
+
+#up6 {
+    background-image: url("images/blogimg9.jpg");
+}
+
+.usualPost:hover {
+    opacity: 0.8;
+}
+
+.usualPost p {
+    padding-top: 14.5em;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.botPosts {
+    width: 75%;
+    height: 37.5em;
+    margin-top: 2%;
+    margin-left: 12.5%;
+}
+
+.imageDesc {
+    text-align: center;
+}
+
+.buttonSpace {
+    width: 75%;
+    margin-left: 12.5%;
+    text-align: center;
+}
+
+.usualButton {
+    margin-top: 5%;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(122, 168, 255);
+    border: 1px rgb(122, 168, 255) solid;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* End of Blog page */
+
+
+/* The post page */
+
+.topSection {
+    width: 100%;
+    display: flex;
+}
+
+#leftSideSection {
+    width: 60%;
+    height: 50em;
+    background-image: url("images/blogimg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#rightSideSection {
+    width: 37%;
+    padding-left: 3%;
+    font-size: 1.9em;
+    color: #40aed7;
+    padding-top: 10em;
+}
+
+#rightSideSection img {
+    margin-right: 0.3em;
+}
+
+.topSection p {
+    font-size: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(165, 165, 165);
+}
+
+.postContent {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 4em;
+}
+
+.postContent p {
+    font-size: 1.25em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.postContent img {
+    width: 100%;
+}
+
+.postContent a {
+    color: #40aed7;
+}
+
+.postContent h1 {
+    color: #40aed7;
+    font-size: 1.7em;
+}
+
+.postContent video {
+    width: 100%;
+}
+
+.postCommentSection {
+    margin-top: 5em;
+    width: 50%;
+    margin-left: 25%;
+    height: 400px;
+    /* border-top: 2px #40aed7 dashed; */
+    padding-bottom: 5em;
+    border: 5px solid transparent;
+    border-image: url("images/borderimg.png") 30 stretch;
+}
+
+.postCommentSection img {
+    border: 0.5px solid black;
+    padding: 3px;
+    position: relative;
+    float: left;
+    margin-left: 5%;
+    height: 4em;
+}
+
+#commentSectionTA {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(236, 236, 236));
+    height: 3em;
+    width: 75%;
+    float: right;
+    margin: 0 5% 0 5%;
+}
+
+.postLeaveComment {
+    padding: 7% 10% 2% 10%;
+    display: flex;
+}
+
+.postCommentButtonSection {
+    margin-right: 14%;
+    text-align: right;
+}
+
+.postCommentButton {
+    width: 8em;
+    height: 2em;
+    background-image: radial-gradient(#91cee4, #77bad3, #40aed7);
+    color: #fff;
+}
+
+.postedComment {
+    display: flex;
+}
+
+.postedComment p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1em;
+    color: #222222;
+    word-wrap: break-word;
+    box-shadow: 2px 4px #40aed7;
+}
+
+.commentComplete {
+    padding: 7% 10% 2% 10%;
+    display: block;
+}
+
+.commentAuthor {
+    margin-left: 5%;
+    margin-bottom: 2%;
+    color: #40aed7;
+    text-shadow: 1px 1px #acacac;
+    font-family: "KG Red Hands", serif;
+}
+
+
+/* End of post page */
+
+
+/* Calendar */
+
+.month {
+    text-align: justify;
+    width: 40%;
+    margin: 2%;
+    border-radius: 5%;
+    border: 1px solid #333333;
+    float: left;
+    padding: 2%;
+    transition: transform .2s;
+    box-shadow: 1px 1px 20px #408199;
+}
+
+.month a img {
+    transition: all 2s ease-in-out;
+}
+
+.month a img:hover {
+    transform: scale(1.5);
+}
+
+.month h1,
+h3 {
+    text-align: center;
+    font-size: 3em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 300;
+    color: #333333;
+    margin: 2%;
+}
+
+.month h3 {
+    font-size: 2em;
+}
+
+.month img {
+    width: 40px;
+    border: 1px ridge #333333;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    padding: 0.1em;
+    margin-left: 2%;
+}
+
+.month mark {
+    font-weight: bold;
+    background-color: #979797;
+}
+
+.theButton {
+    /* text-align: center;
+    background-color: #47b1d8;
+    width: 14em;
+    padding: 0.5em;
+    font-size: 17px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 0.5em; */
+    border: 2px ridge #47b1d8;
+    border-radius: 5px;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 4px 2px;
+    margin-left: 9.375em;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.theButton:hover {
+    background-color: #47b1d8;
+    color: white;
+}
+
+.signUp {
+    text-align: center;
+    width: 40%;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 5%;
+    border: 1px solid #333333;
+    float: right;
+    box-shadow: 1px 1px 20px #408199;
+}
+
+.signUp h2 {
+    text-align: center;
+    font-size: 3em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 300;
+    color: #333333;
+    margin: 2%;
+}
+
+#logIn input,
+email {
+    display: inline-block;
+    width: 14em;
+    padding: 0.5em;
+    font-size: 17px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+.signUp button {
+    text-align: center;
+    background-color: #47b1d8;
+    width: 14em;
+    padding: 0.5em;
+    font-size: 17px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 0.5em;
+}
+
+.signUp button:hover {
+    transition-duration: 0.4s;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+@keyframes mymove {
+    from {
+        left: 50px;
+    }
+    to {
+        left: 600px;
+    }
+}
+
+#food img {
+    width: 100px;
+    /* float: left; */
+    position: relative;
+    padding: 0.1em;
+    margin-left: 2%;
+    animation: mymove 6s infinite;
+    animation-timing-function: ease-in-out;
+    transition: transform .2s;
+}
+
+#food img:hover {
+    transform: rotate(45deg);
+}
+
+#drink img {
+    width: 100px;
+    /* float: left; */
+    position: relative;
+    padding: 0.1em;
+    margin-left: 2%;
+    animation: mymove 6s infinite;
+    animation-timing-function: ease;
+    transition: transform .2s;
+}
+
+#drink img:hover {
+    transform: rotateX(45deg);
+}
+
+#rope img {
+    width: 100px;
+    /* float: left; */
+    position: relative;
+    padding: 0.1em;
+    margin-left: 2%;
+    animation: mymove 6s infinite;
+    animation-timing-function: ease-out;
+    transition: transform .2s;
+}
+
+#rope img:hover {
+    /* transform: rotate(45deg); */
+    transform: rotateY(45deg);
+}
+
+#excercise img {
+    width: 100px;
+    /* float: left; */
+    position: relative;
+    padding: 0.1em;
+    margin-left: 2%;
+    animation: mymove 6s infinite;
+    animation-timing-function: ease-in;
+    transition: transform .2s;
+}
+
+#excercise img:hover {
+    /* transform: rotate(45deg); */
+    transform: skew(20deg, 10deg);
+}
+
+#plan img {
+    width: 100px;
+    /* float: left; */
+    position: relative;
+    padding: 0.1em;
+    margin-left: 2%;
+    animation: mymove 6s infinite;
+    animation-timing-function: ease-out;
+    transition: transform .2s;
+}
+
+#plan img:hover {
+    /* transform: rotate(45deg); */
+    transform: skew(20deg, 10deg);
+}

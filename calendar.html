@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="myStyle.css">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"> 
+    <title>Calendar - Astounding</title>
+    <script defer src="myScript.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <div id="logoimg">
+                    <!-- <h1>Astounding</h1>
+                  <p>Free PSD Website Template</p> -->
+                </div>
+            </a>
+            <div class="navBar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="calendar.html">CALENDAR</a></li>
+                    <li><a href="calculator.html">BMI CALCULATOR</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="month" id="month">
+            <h1>The Month 2022 Workout Calendar</h1>
+            <a href="https://www.facebook.com"> <img src="images/facebook.png" width=40px alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.png" width=40px alt="Instagram"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter.png" width=40px alt="Twitter"></a>
+            <p>Hey guys! Happy New Year! And hello, 2022. I&apos;ve been thinking about how we all celebrate the new year in different ways. Some of us ring it in from our couches, while others go to parties. Some of us can&apos;t even stay awake until midnight
+                ;). Some of us are really intentional about setting a New Year&apos;s resolution, while some of us aren&apos;t sold on the “resolution” tradition. No matter how you decide to enter the new year, I hope it&apos;s everything you hope for.
+                And I hope you&apos;re just as excited as I am for… The January 2022 Workout Calendar!!! It&apos;s here, and it&apos;s ready for you to conquer. Just a little heads up though &apos; this month&apos;s calendar isn&apos;t quite like the
+                others. It also includes the 2022 Glow Up Sessions! Basically, this is a 14-day challenge where we&apos;ll get into the best shape of our lives, mentally and physically. Not a bad way to start a new year, right?
+            </p>
+
+            <button class="theButton" onclick="location.href='images/january.jpg'">Click to view this months calendar</button>
+            <h3>How to follow the Calendar</h3>
+            <p>
+                From January 3 to 9, I&apos;ll be doing one of the workouts from the calendar each day with you LIVE on IG. So make sure you&apos;re following us to join in!<br> Otherwise, check the Youtube playlists to find all of the videos you need
+                for this month&apos;s calendar!!<br> OR make life soo much easier and download the app! Seriously, this is THE BEST. You&apos;ll find all of the live workouts there after the first week of the Glow Up Sessions, and you will LOVE how you
+                can access the monthly calendar and all of the videos in one place!<br>
+                <em> Now that you know where to find your workouts, here&apos;s what you can expect each day of the January Workout Calendar.</em> The goal? To make sure every muscle group gets the attention it deserves every week <br>
+                <dl>
+                    <dt><mark>MONDAY:</mark></dt>
+                    <dd>Total Body</dd>
+                    <dt><mark>TUESDAY:</mark></dt>
+                    <dd>Abs</dd>
+                    <dt><mark>WEDNESDAY:</mark></dt>
+                    <dd>Booty</dd>
+                    <dt><mark>THURSDAY:</mark></dt>
+                    <dd> Total Body</dd>
+                    <dt><mark>FRIDAY:</mark></dt>
+                    <dd>Arms</dd>
+                    <dt><mark>SATURDAY:</mark></dt>
+                    <dd>Legs & Thighs</dd>
+                    <dt><mark>SUNDAY:</mark></dt>
+                    <dd>Recovery</dd>
+                </dl>
+                Do each video once (unless otherwise stated) and check off as you go! Each day will be around 45 min of exercise. <br> REMEMBER! If you download the BODY By Blogilates app (on Apple or Android devices), you&apos;ll have the calendar and
+                workout videos in one place! Plus, you get that “workout complete” checkmark, which is sooo satisfying. <br> If you&apos;re just getting started or want to ease into working out, my Beginner&apos;s Calendar is a great place to start! It&apos;s
+                a free 4-week program to get you stronger so that you can join in on the monthlies when you are ready. <br> Do you have a New Year&apos;s resolution? If yes, tell me what it is in the comments! <br>
+            </p>
+            <p id="res"></p>
+        </div>
+
+        <script type="text/javascript">
+            let text = document.getElementById("month").innerHTML;
+            let pattern = /Month/i
+            let result = pattern.test(text);
+
+            if (result === true) {
+                let output = text.replace(pattern, "January");
+                document.getElementById("month").innerHTML = output;
+            }
+        </script>
+        <div class="signUp">
+            <h2>Subscribe to our package</h2>
+            <img src="images/calendar.png" alt="Workout Calendar">
+            <div id="error"></div>
+            <form id="logIn" name="myForm" method="post" action="http://www.randyconnolly.com/tests/process.php" onsubmit="return validateForm()">
+                <p>Do you want to subscribe to our package program? </p>
+                <input type="text" id="name" name="name" placeholder="Full Name" size="30">
+                <input type="email" id="eamil" name="email" placeholder="Email Address" size="30">
+                <button id="sumbit" type="submit" value="Submit" style="font-family: 'Times New Roman', Times, serif;">SUBMIT</button>
+            </form>
+        </div>
+
+        <div id="food"><img src="images/apple.png" alt="Apple"></div>
+        <div id="drink"><img src="images/water.png" alt="Water"></div>
+        <div id="rope"><img src="images/rope.png" alt="Rope"></div>
+        <div id="excercise"><img src="images/weight.png" alt="Weight"></div>
+        <div id="plan"><img src="images/plan.png" alt="Planer"></div>
+
+
+    </main>
+    <footer>
+        <table>
+            <form method="get" action="http://www.randyconnolly.com/tests/process.php">
+                <tr>
+                    <th>From The Blog</th>
+                    <th>Quick Links</th>
+                    <th>Latest Tweets</th>
+                    <th>Contact Us</th>
+                </tr>
+                <tr rowspan="7">
+                    <td>
+                        <p class="postTitle">How to have a better workout routine?</p>
+                        <p class="postUser"><a href="#">Jason</a>, jason@trainer.com</p>
+                        <p class="postUser">Thursday, 12th November 2021</p>
+                        <p>Lately, for me, it&apos;s all been about self care. I&apos;m really leaning in and realizing that I can apply self-care not just when I’m in the bath or snuggled on the couch, but literally whenever and wherever!<br><br> And that
+                            means taking care of myself </p>
+                        <p><a href="post.html">Read More »</a></p>
+                    </td>
+                    <td>
+                        <a href="podcasts.html">» Podcasts</a>
+                        <hr class="footer">
+                        <a href="blog.html">» Blogs</a>
+                        <hr>
+                        <a href="calculator.html">» BMI Calculator</a>
+                        <hr>
+                        <a href="calendar.html">» Calendar</a>
+                        <hr>
+                        <a href="login.html">» Login</a>
+                        <hr>
+                        <a href="gameController.html">» Feeling Bored?</a>
+                        <hr>
+                        <a href="about.html">» About us</a>
+                        <hr>
+                    </td>
+                    <td>
+                        <p><a href="#">@hannahmorgan</a> I really love this gym. The trainers are the best, they are always there to help you and guide you to be your best self. 18 hours ago</p>
+                        <p><a href="#">@tedmosby</a> This gym transformedme. Not ony physically, but in every aspect of my life. Forever thankful to all of the staff members that work there. 2 days ago</p>
+                    </td>
+                    <td>
+                        <input type="text" name="Emri" placeholder="Full Name" size="30" required>
+                        <input type="email" name="Email" placeholder="Email Address" size="30" required>
+                        <input type="text" name="Subject" placeholder="Subject" size="30" required>
+                        <textarea name="Message" rows="4" cols="29" placeholder="Message" required></textarea><br>
+                        <button type="submit" class="rounded" value="Submit">SUBMIT</button>
+                    </td>
+                </tr>
+
+        </table>
+        </form>
+        <div class="copyright">
+            <address>
+        <p>Copyright &copy; 2013 Domain Name - All Rights Reserved</small></p>
+    </address>
+        </div>
+    </footer>
+
+
+</body>

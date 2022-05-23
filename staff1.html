@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myStyle.css">
+    <title>Jason - Astounding</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"> 
+</head>
+<style>
+    main img {
+        width: 400px;
+        border: 2px ridge #333;
+        border-radius: 5px;
+        box-shadow: 1px 1px 20px #408194;
+        text-align: center;
+        float: left;
+        margin: 2%;
+    }
+    
+    .person {
+        /* width: 900px; */
+        border-radius: 5px;
+        border: 1px dotted #333;
+        box-shadow: 1px 1px 20px #408194;
+        /* display: inline-block; */
+        text-align: justify;
+        margin: 2%;
+        padding: 2%;
+        float: left;
+    }
+    
+    #moreInfo {
+        width: 900px;
+        border-radius: 5px;
+        border: 1px dotted #333;
+        box-shadow: 1px 1px 20px #408194;
+        /* display: inline-block; */
+        text-align: justify;
+        margin: 2%;
+        padding: 2%;
+        float: right;
+    }
+</style>
+
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <div id="logoimg">
+                    <!-- <h1>Astounding</h1>
+                <p>Free PSD Website Template</p> -->
+                    <!-- <img src="images/logo_white2.png" width="200px" style="margin-top: -15px; margin-left: 50px;"> -->
+                </div>
+            </a>
+            <div class="navBar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="calendar.html">CALENDAR</a></li>
+                    <li><a href="calculator.html">BMI CALCULATOR</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+<img id="team1" width="220" height="277" src="images/team1.jpg" alt="Team member" style="display: none;">
+
+<canvas id="myCanvas" width="240" height="297" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script>
+window.onload = function() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("team1");
+  ctx.drawImage(img, 10, 10, 220, 277);
+}
+</script>
+
+
+        <div class="person">
+            <h1>Team Member 1</h1>
+            <p id="identity"></p>
+            <p id="nation"></p>
+            <p id="age"></p>
+            <p id="eyeC"></p>
+            <p id="initial"></p>
+        </div>
+        <p id="moreInfo">Cassey (or <abbr id="initials"></abbr> as we call him) is on a mission to spread the joy of fitness! With over 10 million subscribers across all platforms, Cassey&apos;s upbeat personality and genuine care for his students is what makes him an award-winning fitness instructor. He has been teaching
+            his signature format, POP Pilates, for over 14 years and has certified thousands of instructors to teach the unique class in gyms across the world, with over 4,000 live in-studio classes being taught every month. Cassey&apos;s workouts have
+            inspired millions of young people to get into the best shape of their lives, mentally and physically and now can be found in his top-rated mobile app. Cassey&apos;s passion for bringing joy into all facets of fitness is what led him to launch
+            POPFLEX, a now beloved cult activewear brand, where he is the CEO and Lead Designer.</p>
+
+        <script type="text/javascript">
+            function Person(first, last, age, eye) {
+                this.firstName = first;
+                this.lastName = last;
+                this.age = age;
+                this.eyeColor = eye;
+            }
+            Person.prototype.name = function() {
+                return this.firstName + " " + this.lastName
+            };
+            Person.prototype.nationality = "Spanish";
+            Person.prototype.age = function() {
+                return this.age
+            };
+            Person.prototype.eyeColor = function() {
+                return this.eyeColor
+            };
+            const jason = new Person("Jason", "Regalado", 31, "green")
+            document.getElementById("identity").innerHTML = "Name: " + jason.name()
+            document.getElementById("nation").innerHTML = "Nationality: " + jason.nationality;
+            document.getElementById("age").innerHTML = "Age: " + jason.age;
+            document.getElementById("eyeC").innerHTML = "Eye Color: " + jason.eyeColor;
+            let text = document.getElementById("moreInfo").innerHTML;
+            let result = text.replace(/Cassey/g, "Jason");
+            document.getElementById("moreInfo").innerHTML = result;
+            let init = text.match(/J/g);
+            document.getElementById("initial").innerHTML = init;
+
+
+            const paragraph = "" + jason.name();
+            const regex = /[A-Z]/g;
+            const found = paragraph.match(regex);
+
+            var initials = "";
+            for (var i = 0; i<found.length; i++) {
+                initials += found[i];
+            }
+
+            document.getElementById("initials").innerHTML = initials;
+        </script>
+    </main>
+
+    <footer>
+        <table>
+            <form action="post" action="http://www.randyconnolly.com/tests/process.php">
+                <tr>
+                    <th>From The Blog</th>
+                    <th>Quick Links</th>
+                    <th>Latest Tweets</th>
+                    <th>Contact Us</th>
+                </tr>
+                <tr rowspan="7">
+                    <td>
+                        <p class="postTitle">How to have a better workout routine?</p>
+                        <p class="postUser"><a href="#">Jason</a>, jason@trainer.com</p>
+                        <p class="postUser">Thursday, 12th November 2021</p>
+                        <p>Lately, for me, it’s all been about self care. I’m really leaning in and realizing that I can apply self-care not just when I’m in the bath or snuggled on the couch, but literally whenever and wherever!<br><br> And that means taking
+                            care of myself </p>
+                        <p><a href="post.html">Read More »</a></p>
+                    </td>
+                    <td>
+                        <a href="podcasts.html">» Podcasts</a>
+                        <hr class="footer">
+                        <a href="blog.html">» Blogs</a>
+                        <hr>
+                        <a href="calculator.html">» BMI Calculator</a>
+                        <hr>
+                        <a href="calendar.html">» Calendar</a>
+                        <hr>
+                        <a href="login.html">» Login</a>
+                        <hr>
+                        <a href="gameController.html">» Feeling Bored?</a>
+                        <hr>
+                        <a href="about.html">» About us</a>
+                        <hr>
+                    </td>
+                    <td>
+                        <p><a href="#">@hannahmorgan</a> I really love this gym. The trainers are the best, they are always there to help you and guide you to be your best self. 18 hours ago</p>
+                        <p><a href="#">@tedmosby</a> This gym transformedme. Not ony physically, but in every aspect of my life. Forever thankful to all of the staff members that work there. 2 days ago</p>
+                    </td>
+                    <td>
+                        <input type="text" name="Emri" placeholder="Full Name" size="30" required>
+                        <input type="email" name="Email" placeholder="Email Address" size="30" required>
+                        <input type="text" name="Subject" placeholder="Subject" size="30" required>
+                        <textarea name="Message" rows="4" cols="29" placeholder="Message" required></textarea><br>
+                        <button type="submit" class="rounded" value="Submit">SUBMIT</button>
+                    </td>
+                </tr>
+
+        </table>
+        </form>
+        <div class="copyright">
+            <address>
+        <p>Copyright &copy; 2013 Domain Name - All Rights Reserved</small></p>
+    </address>
+        </div>
+    </footer>
+
+
+</html>
